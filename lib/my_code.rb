@@ -33,14 +33,16 @@ def map_to_square(array){
 }
 
 def reduce_to_total(array, given){
-  total = 0 
+  i = 0 
   while i < array.length do
     given = given + array[i]
     i += 1
 }
 
 def reduce_to_all_true(array){
-  
+  i = 0 
+  while i < array.length do 
+    if array[i] == true
 }
 
 def reduce_to_any_true(array){
