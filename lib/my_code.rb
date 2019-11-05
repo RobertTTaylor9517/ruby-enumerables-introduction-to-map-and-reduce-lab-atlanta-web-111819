@@ -3,7 +3,7 @@ def map_to_negativize(array){
   hold = Array.new 
   while i < array.length do
     hold[i] = array[i] * -1
-    array[i] = hold[i]
+    i += 1 
   end
   return hold
 }
@@ -17,7 +17,7 @@ def map_to_double(array){
   hold = Array.new
   while i < array.length do
     hold[i] = array[i] * 2 
-    array[i] = hold[i]
+    i += 1 
   end
   return hold
 }
@@ -27,7 +27,7 @@ def map_to_square(array){
   hold = Array.new
   while i < array.length do
     hold[i] = array[i] ** 2 
-    array[i] = hold[i]
+    i += 1 
   end
   return hold
 }
@@ -35,7 +35,8 @@ def map_to_square(array){
 def reduce_to_total(array, given){
   total = 0 
   while i < array.length do
-    given = given + array
+    given = given + array[i]
+    i += 1
 }
 
 def reduce_to_all_true(array){
