@@ -43,10 +43,20 @@ def reduce_to_all_true(array){
   i = 0 
   while i < array.length do 
     if array[i] == true
+      i += 1 
+    else
+      return false
+    end
+    return true 
 }
 
 def reduce_to_any_true(array){
-  
+  i = 0 
+  while i < array.length do
+    if array[i] == true 
+      return true
+    end
+    return false
 }
 
 
