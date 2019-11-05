@@ -1,6 +1,6 @@
 def map_to_negativize(array){
   i = 0 
-  hold = [] 
+  hold = Array.new 
   while i < array.length do
     hold[i] = array[i] * -1
     array[i] = hold[i]
@@ -23,7 +23,7 @@ def map_to_double(array){
 }
 
 def map_to_square(array){
-  
+  i = 0 
 }
 
 def reduce_to_total(array, given){
