@@ -24,7 +24,9 @@ def map_to_double(array){
 
 def map_to_square(array){
   i = 0 
-  hold = Array.new 
+  hold = Array.new
+  while i < array.length do
+    hold[i] = array[i]
 }
 
 def reduce_to_total(array, given){
