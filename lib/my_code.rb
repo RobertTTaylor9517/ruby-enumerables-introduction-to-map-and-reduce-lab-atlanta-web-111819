@@ -9,11 +9,17 @@ def map_to_negativize(array){
 }
 
 def map_to_no_change(array){
-  
+  return array
 }
 
 def map_to_double(array){
-  
+  i = 0 
+  hold = []
+  while i < array.length do
+    hold[i] = array[i] * 2 
+    array[i] = hold[i]
+  end
+  return hold
 }
 
 def map_to_square(array){
