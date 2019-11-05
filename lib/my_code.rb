@@ -26,7 +26,10 @@ def map_to_square(array){
   i = 0 
   hold = Array.new
   while i < array.length do
-    hold[i] = array[i]
+    hold[i] = array[i] ** 2 
+    array[i] = hold[i]
+  end
+  return hold
 }
 
 def reduce_to_total(array, given){
