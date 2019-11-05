@@ -1,8 +1,11 @@
 def map_to_negativize(array){
   i = 0 
+  hold = [] 
   while i < array.length do
-    
+    hold[i] = array[i] * -1
+    array[i] = hold[i]
   end
+  return hold
 }
 
 def map_to_no_change(array){
